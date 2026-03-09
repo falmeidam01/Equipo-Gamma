@@ -1,10 +1,42 @@
 [
     {
         "id": "1",
-        "prueba": "Este es una prueba"
+        "texto": "Las denuncias falsas representan solo el 0,01 % de los casos investigados. Fuente: Fiscalía General del Estado, Memoria 2023."
     },
     {
         "id": "2",
-        "prueba": "Esta es una prueba 2"
+        "texto": "En España la brecha salarial de género es del 18,36 % en salario medio anual. Fuente: Instituto Nacional de Estadística (INE), Encuesta Anual de Estructura Salarial."
+    },
+    {
+        "id": "3",
+        "texto": "Las mujeres ocupan aproximadamente 1 de cada 3 puestos directivos en España. Fuente: Instituto Nacional de Estadística (INE)."
+    },
+    {
+        "id":"4",
+        "texto": "La gran mayoría de víctimas mortales por violencia de pareja o expareja en España son mujeres. Fuente: Delegación del Gobierno contra la Violencia de Género."
+    },
+    {
+        "id": "5",
+        "texto": "Las leyes de igualdad buscan corregir desigualdades estructurales, no otorgar privilegios. Fuente: Ministerio de Igualdad – Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres."
+    },
+    {
+        "id": "6",
+        "texto": "No existen beneficios económicos automáticos por denunciar violencia de género. Fuente: Delegación del Gobierno contra la Violencia de Género."
+    },
+    {
+        "id": "7",
+        "texto": "El 17 % de las mujeres en España ha sufrido acoso sexual en algún momento de su vida laboral. Fuente: Agencia de los Derechos Fundamentales de la Unión Europea (FRA)."
+    },
+    {
+        "id": "8",
+        "texto": "Solo alrededor del 30 % del alumnado en carreras STEM son mujeres. Fuente: UNESCO – Informe sobre mujeres en STEM."
+    },
+    {
+        "id": "9",
+        "texto": "Las mujeres dedican casi el doble de tiempo a tareas domésticas y de cuidados. Fuente: Instituto Nacional de Estadística (INE), Encuesta de Empleo del Tiempo."
+    },
+    {
+        "id": "10",
+        "texto": "El feminismo es un movimiento que busca la igualdad de derechos y oportunidades entre mujeres y hombres. Fuente: Naciones Unidas – ONU Mujeres."
     }
 ]
