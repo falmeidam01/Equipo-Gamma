@@ -14,10 +14,10 @@ Historias de Usuario:
 Requerimientos Técnicos:
 
    
-    TT1 - Definir el formato del fichero de memes.
-    TT2 - Definir la estructura de datos que albergará los memes.
-    TT3 - Definir el formato del fichero de realidades.
-    TT4 - Definir la estructura de datos que albergará las realidades (datos reales).
-    TT5 - Definir el formato del fichero de soluciones.
+    TT1 - Definir el formato del fichero de memes.                                      FELIPE
+    TT2 - Definir la estructura de datos que albergará los memes. 
+    TT3 - Definir el formato del fichero de realidades.					LORENZO
+    TT4 - Definir la estructura de datos que albergará las realidades (datos reales).   
+    TT5 - Definir el formato del fichero de soluciones.					RODRIGO
     TT6 - Definir la estructura de datos que albergará las soluciones.
     TT7 - Definir el formato del fichero de resultados
