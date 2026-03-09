@@ -1,8 +1,8 @@
 Historias de Usuario:
 
-    HU1 - Al iniciarse la aplicación, el Sistema comprobará si existe el directorio datos con los ficheros: memes.txt, realidades.json y soluciones.xml. 
-    HU2 - El Sistema comprueba si existe en fichero resultados.txt en el directorio resultados.     
-    HU3 - El Sistema lee el fichero de memes y genera una estructura de datos (array, lista, mapa...).
+    HU1 - Al iniciarse la aplicación, el Sistema comprobará si existe el directorio datos con los ficheros: memes.txt, realidades.json y soluciones.xml. LORENZO
+    HU2 - El Sistema comprueba si existe en fichero resultados.txt en el directorio resultados.             RODRIGO
+    HU3 - El Sistema lee el fichero de memes y genera una estructura de datos (array, lista, mapa...).      FELIPE
     HU4 - El Sistema lee el fichero de realidades y genera una estructura de datos (array, lista, mapa...).
     HU5 - El Sistema mostrará al usuario un meme elegido al azar y una lista numerada de realidades. 
     HU6 - El usuario elegirá el dato real (realidad) que desmiente el meme mostrado.
@@ -14,10 +14,10 @@ Historias de Usuario:
 Requerimientos Técnicos:
 
    
-    TT1 - Definir el formato del fichero de memes.                                      FELIPE | 09/03/2026
-    TT2 - Definir la estructura de datos que albergará los memes.                       FELIPE
-    TT3 - Definir el formato del fichero de realidades.					LORENZO                | 09/03/2026
-    TT4 - Definir la estructura de datos que albergará las realidades (datos reales).   LORENZO   
-    TT5 - Definir el formato del fichero de soluciones.					RODRIGO                | 09/03/2026
-    TT6 - Definir la estructura de datos que albergará las soluciones.  RODRIGO
+    TT1 - Definir el formato del fichero de memes.                                     FELIPE  | 09/03/2026
+    TT2 - Definir la estructura de datos que albergará los memes.                      FELIPE  | 09/03/2026
+    TT3 - Definir el formato del fichero de realidades.					               LORENZO | 09/03/2026
+    TT4 - Definir la estructura de datos que albergará las realidades (datos reales).  LORENZO | 09/03/2026   
+    TT5 - Definir el formato del fichero de soluciones.					               RODRIGO | 09/03/2026
+    TT6 - Definir la estructura de datos que albergará las soluciones.                 RODRIGO | 09/03/2026
     TT7 - Definir el formato del fichero de resultados
