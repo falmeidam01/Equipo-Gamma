@@ -11,7 +11,7 @@ import java.io.File;
 
 public class Programa{
     public static void main(String[] args)throws Exception{
-        
+        comprobarFichero();
         String nombreFichero = "..\\datos\\memes.txt";
         try {
             List<String> lineas = leerFichero(nombreFichero);
@@ -34,6 +34,34 @@ public class Programa{
         }
         return Files.readAllLines(ruta);
     }
+	
+	public static void comprobarFichero() throws Exception{
+		Path directorio = Paths.get("resultados");
+		Path fichero = Paths.get("resultados" + File.separator + "resultados.txt");
+		
+		try{
+			//Comprobar si existe el directorio
+			if(!Files.exists(directorio)){
+				Files.createDirectory(directorio);
+				System.out.println("El directorio 'resultados' creado correctamente.");
+			}else{
+				System.out.println("El directorio ya existe.");
+			}
+			
+			//Comprobar si existe el fichero
+			if(!Files.exists(fichero)){
+				Files.createFile(fichero);
+				System.out.println("El fichero 'resultados.txt' creado correctamente.");
+			}else{
+				System.out.println("El fichero ya existe.");
+			}
+			
+			//si ocurre un error, mostrar el mensaje
+		}catch (IOException e){
+			System.out.println("Error al crear el directorio o fichero: " + e.getMessage());
+		}
+	}
+	
     /**
      * Leer el fichero de realidades datos.json
      * @return List<Realidades> Lista realidades que guarda los id y el texto de cada realidad.

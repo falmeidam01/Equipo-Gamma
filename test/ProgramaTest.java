@@ -3,6 +3,11 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.*;
+import java.io.File;
 
 public class ProgramaTest{
     @Test 
@@ -26,5 +31,16 @@ public class ProgramaTest{
         assertEquals(2, r2.getId());
         assertEquals("En España la brecha salarial de género es del 18,36 % en salario medio anual. Fuente: Instituto Nacional de Estadística (INE), Encuesta Anual de Estructura Salarial.", r2.getTexto());
     }
+	
+	@Test
+	public void testComprobarFichero() throws Exception {
+		Programa.comprobarFichero();
+		
+		Path directorio = Path.of("resultados");
+		assertTrue(Files.exists(directorio)&& Files.isDirectory(directorio), "El directorio 'resultados' debería existir");
+		
+		Path fichero = Path.of("resultados", "resultados.txt");
+		assertTrue(Files.exists(fichero) && Files.isRegularFile(fichero), "El fichero 'resultados.txt' debería existir");
+	}
 
 }
