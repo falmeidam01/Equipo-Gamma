@@ -84,4 +84,12 @@ public class Programa{
         }
         return realidad;
     }
+    
+    public static void elegirMemes(List<Memes> meme){
+        Random aleatorio = new Random();
+        for (int i = 0; i < 5; i++){
+            Meme elegido = meme.get(random.nextInt(meme.size()));
+            System.out.println("Meme elegido: " + elegido.getTexto());
+        }
+    }
 }
