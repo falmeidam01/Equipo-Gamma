@@ -12,7 +12,7 @@ import java.io.File;
 public class Programa{
     public static void main(String[] args)throws Exception{
         
-        String nombreFichero = "..\\datos\\memes.txt";
+        String nombreFichero = "datos" + File.Separator + "memes.txt";
         try {
             List<String> lineas = leerFichero(nombreFichero);
             System.out.println("Leyendo el fichero....");
