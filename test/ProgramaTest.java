@@ -43,4 +43,10 @@ public class ProgramaTest{
 		assertTrue(Files.exists(fichero) && Files.isRegularFile(fichero), "El fichero 'resultados.txt' debería existir");
 	}
 
+	@Test
+	public void testGenerarMemes() throws Exception {
+		List<Memes> memes = Programa.generarMemes();
+		
+		assertNotNull(memes, "La lista no debe ser null");
+	}
 }

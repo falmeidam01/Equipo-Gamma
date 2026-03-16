@@ -12,29 +12,36 @@ import java.util.Random;
 
 public class Programa{
     public static void main(String[] args)throws Exception{
-        comprobarFichero();
-        String nombreFichero = "..\\datos\\memes.txt";
-        try {
-            List<String> lineas = leerFichero(nombreFichero);
-            System.out.println("Leyendo el fichero....");
-            for(String linea : lineas){
-                System.out.println(linea);
-            }
 
-        } catch (Exception e) {
-            System.out.println("Se ha producido un erro");
-        }
+		List<Memes> memes = generarMemes();
         List<Realidades> realidad = leerRealidades();
         System.out.println(realidad);
+		System.out.println(memes);
+		
     }
-
-    public static List<String> leerFichero(String nombreFichero) throws Exception{
-        Path ruta = Paths.get(nombreFichero);
+	/**
+     * Leer el fichero de memes y generar una lista.
+     * @return List<Memes> Lista de memes que guarda los id y los memes.
+     * @throws IOException cuando el fichero no existe o se produce un error
+     */
+	public static List<Memes> generarMemes() throws Exception{
+		String nombreFichero = "datos" + File.separator + "memes.txt";
+		Path ruta = Paths.get(nombreFichero);
         if (!Files.exists(ruta)) {
             throw new IOException("El fichero '" + nombreFichero + "' no existe.");
         }
-        return Files.readAllLines(ruta);
-    }
+		List<Memes> memes = new ArrayList<>();
+		List<String> lineas = Files.readAllLines(ruta);	
+		for (String linea : lineas){
+			String[] trozos = linea.split(",");
+			Integer id = Integer.valueOf(trozos[0].trim());
+			String texto = trozos[1].trim();
+			Memes meme = new Memes(id, texto);
+			memes.add(meme);
+		}
+        return memes;
+	
+	}
 	
 	public static void comprobarFichero() throws Exception{
 		Path directorio = Paths.get("resultados");
