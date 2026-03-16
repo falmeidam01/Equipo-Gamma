@@ -1,5 +1,5 @@
-COMPILAR: ..\jdk-25\bin\javac -cp ".;lib/json.jar" fuentes/*.java
+COMPILAR: ..\jdk-25\bin\javac -cp ".\compilados;lib/json.jar" fuentes/*.java
 EJECUTAR: ..\jdk-25\bin\java -cp ".;lib/json.jar;fuentes" Programa
-COMPILAR_TEST: ..\jdk-25.0.1\bin\javac -cp compilados;lib\junit-jupiter-api-5.9.2.jar;lib\json.jar -d test\compilados test\ProgramaTest.java  
-EJECUTAR_TEST: ..\jdk-25.0.1\bin\java -cp lib\junit-platform-console-standalone-1.9.2.jar;lib\json.jar;compilados;test\compilados org.junit.platform.console.ConsoleLauncher --scan-class-path
+COMPILAR_TEST: ..\jdk-25\bin\javac -cp compilados;lib\junit-jupiter-api-5.9.2.jar;lib\json.jar -d test\compilados test\ProgramaTest.java  
+EJECUTAR_TEST: ..\jdk-25\bin\java -cp lib\junit-platform-console-standalone-1.9.2.jar;lib\json.jar;compilados;test\compilados org.junit.platform.console.ConsoleLauncher --scan-class-path
 

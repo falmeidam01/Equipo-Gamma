@@ -100,7 +100,7 @@ public class Programa{
     /**
      * Elige un meme al azar de la lista y muestra su texto
      */
-    public static Integer elegirMemes(List<Memes> memes){
+    /*public static Integer elegirMemes(List<Memes> memes){
         Random aleatorio = new Random();
         Integer idElegido = random.nextInt(memes.size());
         Meme elegido = memes.get(idElegido);
@@ -118,6 +118,5 @@ public class Programa{
         }else{
             System.out.println("Has fallado intentalo otra vez");
         }
-    }
-
+    }*/
 }
