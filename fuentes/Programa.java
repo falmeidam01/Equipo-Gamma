@@ -8,6 +8,7 @@ import org.json.*;
 import java.nio.file.*;
 import java.util.*;
 import java.io.File;
+import java.util.Random;
 
 public class Programa{
     public static void main(String[] args)throws Exception{
@@ -85,11 +86,27 @@ public class Programa{
         return realidad;
     }
     
-    public static void elegirMemes(List<Memes> meme){
+    /**
+     * Elige un meme al azar de la lista y muestra su texto
+     */
+    public static Integer elegirMemes(List<Memes> memes){
         Random aleatorio = new Random();
-        for (int i = 0; i < 5; i++){
-            Meme elegido = meme.get(random.nextInt(meme.size()));
-            System.out.println("Meme elegido: " + elegido.getTexto());
+        Integer idElegido = random.nextInt(memes.size());
+        Meme elegido = memes.get(idElegido);
+        System.out.println("Meme elegido: " + elegido.getTexto());
+        return idElegido;
+    }
+
+    public static void comprobarRespuesta(Integer idElegido, String respuestaUsuario){
+        Integer contadorPuntos = 0;
+        Integer conversorRespuesta = Integer.valueOf(respuestaUsuario);
+        Integer parseadorRespuesta = conversorRespuesta - 1;
+        if ( idElegido == parseadorRespuesta ){
+            System.out.println("¡Correcto! te sumamos un punto");
+            contadorPuntos++;
+        }else{
+            System.out.println("Has fallado intentalo otra vez");
         }
     }
+
 }
