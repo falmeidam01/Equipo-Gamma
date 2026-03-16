@@ -27,4 +27,10 @@ public class ProgramaTest{
         assertEquals("En España la brecha salarial de género es del 18,36 % en salario medio anual. Fuente: Instituto Nacional de Estadística (INE), Encuesta Anual de Estructura Salarial.", r2.getTexto());
     }
 
+	@Test
+	public void testGenerarMemes() throws Exception {
+		List<Memes> memes = Programa.generarMemes();
+		
+		assertNotNull(memes, "La lista no debe ser null");
+	}
 }
