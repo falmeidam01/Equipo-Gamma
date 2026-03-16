@@ -35,6 +35,10 @@ public class Programa{
         return Files.readAllLines(ruta);
     }
 	
+	/**
+     * Comprueba si el directorio resultados y el fichero resultados.txt existe y si no los crea.
+     * @throws IOException cuando no puede crear el directorio o fichero.
+     */
 	public static void comprobarFichero() throws Exception{
 		Path directorio = Paths.get("resultados");
 		Path fichero = Paths.get("resultados" + File.separator + "resultados.txt");
