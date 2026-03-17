@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.List;
+import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
@@ -8,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.*;
 import java.io.File;
+import org.junit.jupiter.api.BeforeEach;
 
 public class ProgramaTest{
     @Test 
@@ -49,4 +51,41 @@ public class ProgramaTest{
 		
 		assertNotNull(memes, "La lista no debe ser null");
 	}
+   @Test
+    public void testElegirMemes() {
+        List<Memes> lista = new ArrayList<>();
+        lista.add(new Memes(1, "Las denuncias falsas por violencia de género son muy comunes."));
+        lista.add(new Memes(2, "Las mujeres cobran menos porque trabajan menos horas."));
+        lista.add(new Memes(3, "La igualdad entre hombres y mujeres ya está conseguida."));
+
+        // Ejecutamos el método
+        Integer idElegido = Programa.elegirMemes(lista);
+
+        // Comprobaciones básicas
+        assertNotNull(idElegido, "El id elegido no debe ser null");
+    }
+
+    @BeforeEach
+    public void resetPuntos() {
+        Programa.contadorPuntos = 0; // Reiniciamos antes de cada test
+    }
+
+    @Test
+    public void testRespuestaCorrecta() throws Exception {
+        Programa.comprobarRespuesta(3, 4);
+        assertEquals(1, Programa.contadorPuntos, "Debe sumar un punto si la respuesta es correcta");
+    }
+
+    @Test
+    public void testRespuestaIncorrecta() throws Exception {
+        Programa.comprobarRespuesta(2, 7);
+        assertEquals(0, Programa.contadorPuntos, "No debe sumar puntos si la respuesta es incorrecta");
+    }
+
+    @Test
+    public void testRespuestaFueraDeRango() {
+        assertThrows(Exception.class, () -> {
+            Programa.comprobarRespuesta(1, -1);
+        });
+    }
 }

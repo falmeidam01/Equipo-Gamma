@@ -1,10 +1,10 @@
-1,“Las denuncias falsas por violencia de género son muy comunes.”
-2,“Las mujeres cobran menos porque trabajan menos horas.”
-3,“La igualdad entre hombres y mujeres ya está conseguida.”
-4,“La violencia de género afecta por igual a hombres y mujeres.”
-5,“Los hombres ya están discriminados por las leyes de igualdad.”
-6,“Las mujeres denuncian violencia de género para obtener beneficios.”
-7,“Las mujeres casi no sufren acoso en el trabajo.”
-8,“Las mujeres no estudian carreras tecnológicas porque no quieren.”
-9,“Las tareas del hogar ya se reparten por igual.”
-10,“El feminismo busca la superioridad de las mujeres.”
+1,Las denuncias falsas por violencia de género son muy comunes.
+2,Las mujeres cobran menos porque trabajan menos horas.
+3,La igualdad entre hombres y mujeres ya está conseguida.
+4,La violencia de género afecta por igual a hombres y mujeres.
+5,Los hombres ya están discriminados por las leyes de igualdad.
+6,Las mujeres denuncian violencia de género para obtener beneficios.
+7,Las mujeres casi no sufren acoso en el trabajo.
+8,Las mujeres no estudian carreras tecnológicas porque no quieren.
+9,Las tareas del hogar ya se reparten por igual.
+10,El feminismo busca la superioridad de las mujeres.
