@@ -5,9 +5,9 @@ Historias de Usuario:
     HU3 - El Sistema lee el fichero de memes y genera una estructura de datos (array, lista, mapa...).      FELIPE | 16/03/2026
     HU4 - El Sistema lee el fichero de realidades y genera una estructura de datos (array, lista, mapa...).	LORENZO | 16/03/2026
     HU5 - El Sistema mostrará al usuario un meme elegido al azar y una lista numerada de realidades.	LORENZO | 16/03/2026
-    HU6 - El usuario elegirá el dato real (realidad) que desmiente el meme mostrado.			FELIPE | RODRIGO | LORENZO
-    HU7 - El Sistema mostrará el marcador y volverá a mostrar un meme hasta completar 5 memes.		FELIPE | RODRIGO | LORENZO
-    HU8 - El Sistema mostrará la puntuación final alcanzada por el usuario.
+    HU6 - El usuario elegirá el dato real (realidad) que desmiente el meme mostrado.			FELIPE|RODRIGO|LORENZO| 17/03/2026
+    HU7 - El Sistema mostrará el marcador y volverá a mostrar un meme hasta completar 5 memes.		FELIPE|RODRIGO|LORENZO| 17/03/2026
+    HU8 - El Sistema mostrará la puntuación final alcanzada por el usuario.				FELIPE|RODRIGO|LORENZO| 17/03/2026
     HU9 - Si al finalizar, la puntuación del usuario se encuentra entre las tres mejores:
     HU10 - El Sistema muestra la lista con las mejores puntuaciones y el nombres de los usuarios y se despide.
 
