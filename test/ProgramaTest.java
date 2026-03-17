@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 import java.nio.file.*;
 import java.io.File;
 import org.junit.jupiter.api.BeforeEach;
+import com.iescastelar.*;
 
 public class ProgramaTest{
     @Test 
