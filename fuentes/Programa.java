@@ -8,15 +8,28 @@ import org.json.*;
 import java.nio.file.*;
 import java.util.*;
 import java.io.File;
-import java.util.Random;
+import java.util.*;
 
 public class Programa{
+    public static Integer contadorPuntos = 0;
     public static void main(String[] args)throws Exception{
-
+        Scanner teclado = new Scanner(System.in);
 		List<Memes> memes = generarMemes();
         List<Realidades> realidad = leerRealidades();
-        System.out.println(realidad);
-		System.out.println(memes);
+        System.out.println("Bienvenido al programa");
+        for (int i=0; i < 5; i++){
+            System.out.println("Mostrando un meme al azar...");
+            Integer idElegido = elegirMemes(memes);
+            System.out.println("Estas son las posibles respuestas: \n");
+            System.out.println(realidad);
+            System.out.println("Elija una respuesta: ");
+            Integer respuestaUsuario = Integer.valueOf(teclado.nextLine());
+            System.out.println("Perfecto tu respuesta ha sido: " + respuestaUsuario);
+            System.out.println("Validando tu respuesta....");
+            comprobarRespuesta(idElegido, respuestaUsuario);
+        }
+        System.out.println("El juego ha terminado, muchas grácias por usar nuestra app \n");
+        System.out.println("Te dejamos tus puntuaciones: " + contadorPuntos);
 		
     }
 	/**
@@ -99,24 +112,34 @@ public class Programa{
     
     /**
      * Elige un meme al azar de la lista y muestra su texto
+     * @param memes Una lista con los memes
+     * @return el id del meme elegido.
      */
-    /*public static Integer elegirMemes(List<Memes> memes){
+    public static Integer elegirMemes(List<Memes> memes){
         Random aleatorio = new Random();
-        Integer idElegido = random.nextInt(memes.size());
-        Meme elegido = memes.get(idElegido);
+        Integer idElegido = aleatorio.nextInt(memes.size());
+        Memes elegido = memes.get(idElegido);
         System.out.println("Meme elegido: " + elegido.getTexto());
         return idElegido;
     }
-
-    public static void comprobarRespuesta(Integer idElegido, String respuestaUsuario){
-        Integer contadorPuntos = 0;
-        Integer conversorRespuesta = Integer.valueOf(respuestaUsuario);
-        Integer parseadorRespuesta = conversorRespuesta - 1;
-        if ( idElegido == parseadorRespuesta ){
-            System.out.println("¡Correcto! te sumamos un punto");
-            contadorPuntos++;
+    /**
+     * Comprueba si la respuesta del usuario es valida y si lo es le suma un punto
+     * @param idElegido el id que pasa la función elegirMEmes
+     * @param respuestaUsuario la respuesta que da el usuario
+     * @throws Exception Si la respuesta del usuario no está entre 0 y 10
+     */
+    public static void comprobarRespuesta(Integer idElegido, Integer respuestaUsuario) throws Exception{
+        if (respuestaUsuario < 0 || respuestaUsuario > 10){
+            throw new Exception("Debes seleccionar un valor entre 1 y 10");
         }else{
-            System.out.println("Has fallado intentalo otra vez");
+           Integer parseadorRespuesta = respuestaUsuario - 1;
+           if ( idElegido == parseadorRespuesta ){
+                System.out.println("¡Correcto! te sumamos un punto");
+                contadorPuntos++;
+           }else{
+                System.out.println("Has fallado intentalo otra vez");
+           }
+            System.out.println("Estos son tus puntos actuales: " + contadorPuntos); 
         }
-    }*/
+    }
 }
