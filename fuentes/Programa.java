@@ -23,7 +23,7 @@ public class Programa{
             Integer idElegido = elegirMemes(memes);
             System.out.println("Estas son las posibles respuestas: \n");
             System.out.println(realidad);
-            System.out.println("Elija una respuesta: ");
+            System.out.println("Elija una respuesta(1, 10): ");
             Integer respuestaUsuario = Integer.valueOf(teclado.nextLine());
             System.out.println("Perfecto tu respuesta ha sido: " + respuestaUsuario);
             System.out.println("Validando tu respuesta....");
