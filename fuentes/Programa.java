@@ -140,7 +140,7 @@ public class Programa{
            }else{
                 System.out.println("Has fallado intentalo otra vez");
            }
-            System.out.println("Estos son tus puntos actuales: " + contadorPuntos); 
+            System.out.println("Tus puntos actuales son: " + contadorPuntos); 
         }
     }
 }
