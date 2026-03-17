@@ -13,6 +13,8 @@ import java.util.*;
 public class Programa{
     public static Integer contadorPuntos = 0;
     public static void main(String[] args)throws Exception{
+        Scanner teclado = new Scanner(System.in);
+		List<Memes> memes = generarMemes();
         List<Realidades> realidad = leerRealidades();
         System.out.println("Bienvenido al programa");
         for (int i=0; i < 5; i++){
