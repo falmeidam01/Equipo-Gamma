@@ -29,8 +29,8 @@ public class Programa{
             System.out.println("Validando tu respuesta....");
             comprobarRespuesta(idElegido, respuestaUsuario);
         }
-        System.out.println("El juego ha terminado, muchas grácias por usar nuestra app \n");
-        System.out.println("Te dejamos tus puntuaciones: " + contadorPuntos);
+        System.out.println("El juego ha terminado muchas grácias por usar nuestra app \n");
+        System.out.println("Te dejamos tu puntuación total: " + contadorPuntos);
 		
     }
 	/**
