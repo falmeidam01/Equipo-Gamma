@@ -1,12 +1,12 @@
 Historias de Usuario:
 
     HU1 - Al iniciarse la aplicación, el Sistema comprobará si existe el directorio datos con los ficheros: memes.txt, realidades.json y soluciones.xml. LORENZO | 11/03/2026
-    HU2 - El Sistema comprueba si existe en fichero resultados.txt en el directorio resultados.             RODRIGO
-    HU3 - El Sistema lee el fichero de memes y genera una estructura de datos (array, lista, mapa...).      FELIPE
-    HU4 - El Sistema lee el fichero de realidades y genera una estructura de datos (array, lista, mapa...).
-    HU5 - El Sistema mostrará al usuario un meme elegido al azar y una lista numerada de realidades.	LORENZO 
-    HU6 - El usuario elegirá el dato real (realidad) que desmiente el meme mostrado.
-    HU7 - El Sistema mostrará el marcador y volverá a mostrar un meme hasta completar 5 memes.
+    HU2 - El Sistema comprueba si existe en fichero resultados.txt en el directorio resultados.             RODRIGO | 16/03/2026
+    HU3 - El Sistema lee el fichero de memes y genera una estructura de datos (array, lista, mapa...).      FELIPE | 16/03/2026
+    HU4 - El Sistema lee el fichero de realidades y genera una estructura de datos (array, lista, mapa...).	LORENZO | 16/03/2026
+    HU5 - El Sistema mostrará al usuario un meme elegido al azar y una lista numerada de realidades.	LORENZO | 16/03/2026
+    HU6 - El usuario elegirá el dato real (realidad) que desmiente el meme mostrado.			FELIPE | RODRIGO | LORENZO
+    HU7 - El Sistema mostrará el marcador y volverá a mostrar un meme hasta completar 5 memes.		FELIPE | RODRIGO | LORENZO
     HU8 - El Sistema mostrará la puntuación final alcanzada por el usuario.
     HU9 - Si al finalizar, la puntuación del usuario se encuentra entre las tres mejores:
     HU10 - El Sistema muestra la lista con las mejores puntuaciones y el nombres de los usuarios y se despide.
@@ -21,3 +21,4 @@ Requerimientos Técnicos:
     TT5 - Definir el formato del fichero de soluciones.					               RODRIGO | 09/03/2026
     TT6 - Definir la estructura de datos que albergará las soluciones.                 RODRIGO | 09/03/2026
     TT7 - Definir el formato del fichero de resultados
+    TT8 - Hacer paquete .castelar(readme de fuentes)
