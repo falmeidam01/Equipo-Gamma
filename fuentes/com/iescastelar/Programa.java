@@ -11,8 +11,21 @@ import java.util.*;
 import java.io.File;
 import java.util.*;
 
+/**
+ * Clase principal del programa de juego de memes.
+ * Permite mostrar memes aleatorios y que el usuario adivine la respuesta correcta.
+ * Lleva un contador de puntos acumulados.
+ */
+ 
 public class Programa{
     public static Integer contadorPuntos = 0;
+	 /**
+     * Método principal que ejecuta el programa.
+     * Controla el flujo del juego y la interacción con el usuario.
+     *
+     * @param args Argumentos de línea de comandos
+     * @throws Exception Si ocurre algún error durante la ejecución
+     */
     public static void main(String[] args)throws Exception{
         Scanner teclado = new Scanner(System.in);
 		List<Memes> memes = generarMemes();
