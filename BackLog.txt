@@ -21,4 +21,6 @@ Requerimientos Técnicos:
     TT5 - Definir el formato del fichero de soluciones.					               RODRIGO | 09/03/2026
     TT6 - Definir la estructura de datos que albergará las soluciones.                 RODRIGO | 09/03/2026
     TT7 - Definir el formato del fichero de resultados
-    TT8 - Hacer paquete .castelar(readme de fuentes)
+    TT8 - Hacer paquete .castelar(readme de fuentes)					FELIPE | 17/03/2026
+    TT9 - Hacer manual de instalación							LORENZO | 17/03/2026
+    TT10 - Hacer Manual javadoc								RODRIGO | 17/03/2026
